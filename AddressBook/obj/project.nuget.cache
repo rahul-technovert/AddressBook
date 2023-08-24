@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mWIxdMtN11epsB1GW8e/LDCB4ieTiadGvX7zKR22bvSRXk5tez0BdDATRDwqWuZVu+0iO3oLqCzae/AxUHM8dQ==",
+  "dgSpecHash": "dohkfzKJUN/2fRAURnafWKSy7R9cEmrB7XUgccyhUwapcLgMUz3PvU2xvNR2kela6qqEiKmWWO4BNSWnIBYiTA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rahul.k\\OneDrive - Technovert\\Desktop\\.Net\\AddressBook\\AddressBook\\server.csproj",
+  "projectFilePath": "C:\\Users\\rahul.k\\OneDrive - Technovert\\Desktop\\.Net\\AddressBook\\AddressBook\\AddressBook.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rahul.k\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\rahul.k\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

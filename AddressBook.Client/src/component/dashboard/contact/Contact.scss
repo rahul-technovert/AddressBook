@@ -1,0 +1,42 @@
+.contact{
+
+
+    max-width: 400px;
+    p{
+        font-size: 12px;
+        margin: 0;
+    }
+    
+    .address-container{
+        display: grid;
+        grid-template-columns: 50px 150px;
+    }
+
+    .name{
+        font-size: 28px;
+    }
+    
+    .contact-numbers{
+        line-height: 15px;
+    }
+
+    .name-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .options{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    
+    }
+
+    .name-container, .email, .contact-numbers, .website{
+        margin-bottom: 12px;
+    }
+}
+

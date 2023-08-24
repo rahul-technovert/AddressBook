@@ -1,0 +1,28 @@
+.form-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(8px);
+}
+
+.contact-form {
+  position: absolute;
+  padding: 20px 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: #0000001a 0px 1px 2px 0px;
+
+  .number-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .address {
+    display: grid;
+  }
+}

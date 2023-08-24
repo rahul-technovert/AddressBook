@@ -1,0 +1,33 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 385px 1fr;
+  gap: 100px;
+  padding: 10px 30px;
+
+  .contact-card-list {
+    .contacts {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .heading {
+      font-size: 16px;
+      margin: 0 0 10px 0;
+    }
+
+    .list-item {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      padding: 10px 20px;
+    }
+
+    .list-item:hover {
+      background-color: #eee;
+      cursor: pointer;
+    }
+  }
+}
+
+.contact-container {
+  padding-top: 20px;
+}

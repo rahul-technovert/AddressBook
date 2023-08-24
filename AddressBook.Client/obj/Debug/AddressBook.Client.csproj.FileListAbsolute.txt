@@ -1,0 +1,3 @@
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Client\obj\Debug\AddressBook.Client.csproj.AssemblyReference.cache
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Client\obj\Debug\AddressBook.Client.csproj.SuggestedBindingRedirects.cache
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Client\obj\Debug\AddressBook.Client.csproj.CoreCompileInputs.cache

@@ -3,27 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "server", "AddressBook\server.csproj", "{A9465472-F154-4520-8944-E2B31D0F8661}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddressBook.API", "AddressBook\AddressBook.API.csproj", "{A9465472-F154-4520-8944-E2B31D0F8661}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "client", "..\..\AddressBookGit\AddressBook\client\", "{C1191EBA-A1C6-4E73-92BD-01198D2C145D}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_60704"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\AddressBookGit\AddressBook\client\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60704\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_60704"
-		Release.AspNetCompiler.PhysicalPath = "..\..\AddressBookGit\AddressBook\client\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60704\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "60704"
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Client", "AddressBook.Client\AddressBook.Client.csproj", "{AD4C9D2A-37A5-4AD5-9AAE-B5D85BA1821B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +17,10 @@ Global
 		{A9465472-F154-4520-8944-E2B31D0F8661}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9465472-F154-4520-8944-E2B31D0F8661}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9465472-F154-4520-8944-E2B31D0F8661}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C1191EBA-A1C6-4E73-92BD-01198D2C145D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C1191EBA-A1C6-4E73-92BD-01198D2C145D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C1191EBA-A1C6-4E73-92BD-01198D2C145D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{C1191EBA-A1C6-4E73-92BD-01198D2C145D}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{AD4C9D2A-37A5-4AD5-9AAE-B5D85BA1821B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD4C9D2A-37A5-4AD5-9AAE-B5D85BA1821B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD4C9D2A-37A5-4AD5-9AAE-B5D85BA1821B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD4C9D2A-37A5-4AD5-9AAE-B5D85BA1821B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

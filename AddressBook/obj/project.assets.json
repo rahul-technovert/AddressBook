@@ -3941,9 +3941,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rahul.k\\OneDrive - Technovert\\Desktop\\.Net\\AddressBook\\AddressBook\\server.csproj",
-      "projectName": "server",
-      "projectPath": "C:\\Users\\rahul.k\\OneDrive - Technovert\\Desktop\\.Net\\AddressBook\\AddressBook\\server.csproj",
+      "projectUniqueName": "C:\\Users\\rahul.k\\OneDrive - Technovert\\Desktop\\.Net\\AddressBook\\AddressBook\\AddressBook.API.csproj",
+      "projectName": "AddressBook.API",
+      "projectPath": "C:\\Users\\rahul.k\\OneDrive - Technovert\\Desktop\\.Net\\AddressBook\\AddressBook\\AddressBook.API.csproj",
       "packagesPath": "C:\\Users\\rahul.k\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\rahul.k\\OneDrive - Technovert\\Desktop\\.Net\\AddressBook\\AddressBook\\obj\\",
       "projectStyle": "PackageReference",

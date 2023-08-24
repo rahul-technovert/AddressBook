@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "wHmTdzQjOI+52yc/ssik8jb3aBon0KdSXd8S7aZ3iSw=",
-  "Source": "server",
-  "BasePath": "_content/server",
+  "Hash": "WYIyAfK4das//qCyjL0flwxp/0CNk0RYLOwVYtOibpw=",
+  "Source": "AddressBook.API",
+  "BasePath": "_content/AddressBook.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

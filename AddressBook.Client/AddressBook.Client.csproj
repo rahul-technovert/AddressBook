@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD4C9D2A-37A5-4AD5-9AAE-B5D85BA1821B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AddressBook.Client</RootNamespace>
+    <AssemblyName>AddressBook.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="config\.env.development" />
+    <None Include="package-lock.json" />
+    <None Include="package.json" />
+    <None Include="src\component\common\iconButton\IconButton.scss" />
+    <None Include="src\component\common\navbar\Navbar.scss" />
+    <None Include="src\component\dashboard\contactCard\ContactCard.scss" />
+    <None Include="src\component\dashboard\contactForm\contactForm.scss" />
+    <None Include="src\component\dashboard\contact\Contact.scss" />
+    <None Include="src\component\dashboard\Dashboard.scss" />
+    <None Include="src\component\dashboard\menubar\Menubar.scss" />
+    <None Include="src\component\dashboard\popup\Popup.scss" />
+    <None Include="tsconfig.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="index.html" />
+    <Content Include="public\vite.svg" />
+    <Content Include="src\assets\blog-icon.png" />
+    <Content Include="src\assets\delete.svg" />
+    <Content Include="src\assets\delete1.png" />
+    <Content Include="src\assets\delete2.png" />
+    <Content Include="src\assets\Edit-icon.png" />
+    <Content Include="src\assets\edit1.jpg" />
+    <Content Include="src\assets\react.svg" />
+    <Content Include="src\assets\welcome.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\common\apis\ApiEndpoints.ts" />
+    <TypeScriptCompile Include="src\common\constants\Constants.ts" />
+    <TypeScriptCompile Include="src\common\enums\ActionTypes.ts" />
+    <TypeScriptCompile Include="src\component\app\App.tsx" />
+    <TypeScriptCompile Include="src\component\common\iconButton\IconButton.tsx" />
+    <TypeScriptCompile Include="src\component\common\input\Input.tsx" />
+    <TypeScriptCompile Include="src\component\common\navbar\Navbar.tsx" />
+    <TypeScriptCompile Include="src\component\dashboard\contactCard\ContactCard.tsx" />
+    <TypeScriptCompile Include="src\component\dashboard\contactForm\ContactForm.tsx" />
+    <TypeScriptCompile Include="src\component\dashboard\contact\Contact.tsx" />
+    <TypeScriptCompile Include="src\component\dashboard\Dashboard.tsx" />
+    <TypeScriptCompile Include="src\component\dashboard\menubar\Menubar.tsx" />
+    <TypeScriptCompile Include="src\component\dashboard\popup\Popup.tsx" />
+    <TypeScriptCompile Include="src\interfaces\IContact.ts" />
+    <TypeScriptCompile Include="src\interfaces\IContactCard.ts" />
+    <TypeScriptCompile Include="src\interfaces\IContactForm.ts" />
+    <TypeScriptCompile Include="src\interfaces\IErrorMessage.ts" />
+    <TypeScriptCompile Include="src\interfaces\ILength.ts" />
+    <TypeScriptCompile Include="src\interfaces\IRegexp.ts" />
+    <TypeScriptCompile Include="src\main.tsx" />
+    <TypeScriptCompile Include="src\reducers\ContactCardListReducer.ts" />
+    <TypeScriptCompile Include="src\services\ContactService.ts" />
+    <TypeScriptCompile Include="src\services\HttpService.ts" />
+    <TypeScriptCompile Include="src\utils\ErrorMessage.ts" />
+    <TypeScriptCompile Include="src\utils\Utility.ts" />
+    <TypeScriptCompile Include="src\vite-env.d.ts" />
+    <TypeScriptCompile Include="vite.config.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

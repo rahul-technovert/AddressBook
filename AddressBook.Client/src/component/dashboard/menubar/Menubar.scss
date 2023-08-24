@@ -1,0 +1,42 @@
+.menubar{
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px 5px 30px;
+    align-items: center;
+
+    .menus{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 20px;
+        font-size: 14px;
+        font-weight: 500;
+        
+    }
+
+    .link{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .blog-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    .add-btn{
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        font-weight: 500;
+
+    }
+
+}
+
+
+
+

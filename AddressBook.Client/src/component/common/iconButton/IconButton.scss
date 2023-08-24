@@ -1,0 +1,24 @@
+
+.icon-tag-button{
+
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 12px;
+    padding: 3px;
+    background-color: #fff;
+    border: none;
+
+    .icon-pic{
+        width: 15px;
+        height: 15px;
+    }
+
+}
+
+.icon-tag-button:hover{
+    background-color: #ddd;
+}
+
+
+
