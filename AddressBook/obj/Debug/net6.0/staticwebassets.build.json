@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "DBlp+7GAsgx+DlMik9IJtT49z8tCBtFapeW1EWSGhbc=",
-  "Source": "AddressBook",
-  "BasePath": "_content/AddressBook",
+  "Hash": "wHmTdzQjOI+52yc/ssik8jb3aBon0KdSXd8S7aZ3iSw=",
+  "Source": "server",
+  "BasePath": "_content/server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

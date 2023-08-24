@@ -9,7 +9,13 @@ namespace AddressBook.Contexts
         {
             
         }
-
         public DbSet<Contact> Contacts { get; set; }
+        public DbSet<ContactCard> ContactCards { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+           modelBuilder.Entity<ContactCard>().ToView("ContactCardView").HasKey(c => c.Id);  
+        }
     }
+
 }
+

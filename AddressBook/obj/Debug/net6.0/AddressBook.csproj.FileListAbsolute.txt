@@ -85,9 +85,3 @@ C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook\obj\
 C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook\obj\Debug\net6.0\AddressBook.pdb
 C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook\obj\Debug\net6.0\AddressBook.genruntimeconfig.cache
 C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook\obj\Debug\net6.0\ref\AddressBook.dll
-C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook\bin\Debug\net6.0\System.Web.Cors.dll
-C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook\bin\Debug\net6.0\System.Net.Http.Formatting.dll
-C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook\bin\Debug\net6.0\System.Web.Http.dll
-C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook\bin\Debug\net6.0\System.Web.Http.Cors.dll
-C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

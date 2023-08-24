@@ -1,5 +1,6 @@
 ﻿using AddressBook.Contexts;
 using AddressBook.Models;
+using AddressBook.Services;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,71 +10,52 @@ namespace AddressBook.Controllers
     [Route("api/contacts")]
     public class ContactsController : Controller
     {
-        private AddressBookContext context;
-        public ContactsController(AddressBookContext addressContext)
+        private ContactServices _services;
+        public ContactsController(ContactServices services)
         {
-            
-            context = addressContext;
+            this._services = services;
         }
 
-        [HttpGet]
-        public IEnumerable<Contact> GetContacts()
+        [HttpGet("cards")]
+        public IActionResult GetCards()
         {
-      
-            return context.Contacts.ToList();
+            return Ok(this._services.GetCards());
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetContact(int id)
+        {
+            Contact contact = this._services.GetContact(id);
+            
+            if(contact == null) return NotFound();
+
+            return Ok(contact);
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateContact([FromBody] Contact contact)
+        public IActionResult CreateContact([FromBody] Contact contact)
         {
-        
-
-            context.Contacts.Add(contact);
-            await context.SaveChangesAsync();
-
+            this._services.CreateContact(contact);
             return Ok(contact);
         }
         
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateContact(int id, [FromBody] Contact contact)
+        public IActionResult UpdateContact(int id, [FromBody] Contact contact)
         {
-
-            Contact dbContact = await context.Contacts.FindAsync(id);
-
-            if (dbContact == null)
-                return NotFound();
-            
-            MapContact(contact, dbContact);
-            await context.SaveChangesAsync();
-            return Ok();
+            this._services.UpdateContact(contact);
+            return Ok(contact);
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteContact(int id)
+        public IActionResult DeleteContact(int id)
         {
-            Contact contact = await context.Contacts.FindAsync(id);
+           bool isDeleted = this._services.DeleteContact(id);
 
-            if (contact == null)
-                return NotFound();
-            
-            context.Remove(contact);
-            await context.SaveChangesAsync();
-            return Ok(id);
+             if(!isDeleted) return NotFound();
+
+             return Ok();
 
         }
-
-        private void MapContact(Contact updatedContact, Contact dbContact)
-        {
-            dbContact.Email = updatedContact.Email;
-            dbContact.Address  = updatedContact.Address;
-            dbContact.Landline = updatedContact.Landline;
-            dbContact.Website = updatedContact.Website;   
-            dbContact.Mobile = updatedContact.Mobile; 
-            dbContact.Name = updatedContact.Name;
-
-        }
-
-
 
     }
 }

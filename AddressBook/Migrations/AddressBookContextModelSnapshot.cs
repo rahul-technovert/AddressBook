@@ -62,6 +62,31 @@ namespace AddressBook.Migrations
 
                     b.ToTable("Contacts");
                 });
+
+            modelBuilder.Entity("AddressBook.Models.ContactCard", b =>
+                {
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Email");
+
+                    b.Property<int>("Id")
+                        .HasColumnType("int")
+                        .HasColumnName("Id");
+
+                    b.Property<string>("Mobile")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Mobile");
+
+                    b.Property<short>("Name")
+                        .HasColumnType("smallint")
+                        .HasColumnName("Name");
+
+                    b.ToTable((string)null);
+
+                    b.ToView("vw_ContactView", (string)null);
+                });
 #pragma warning restore 612, 618
         }
     }

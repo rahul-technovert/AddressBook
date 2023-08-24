@@ -1,11 +1,8 @@
 using AddressBook.Contexts;
+using AddressBook.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-
-//builder.Services.AddCors(options => options.AddPolicy("AllowAnyOrigin", builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
-
-// Add services to the container.
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -20,6 +17,9 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAnyOrigin",
         builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 });
+
+//registering services here
+builder.Services.AddScoped<ContactServices>();
 
 var app = builder.Build();
 
