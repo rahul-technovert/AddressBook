@@ -22,7 +22,7 @@ function Dashboard() {
   const contactServices = new ContactService();
 
   useEffect(() => {
-    const { request, cancel } = contactServices.getCards();
+    const { request, cancel } = contactServices.getAll();
     request
       .then(({ data: cards }) => {
         contactCardListDispatch({

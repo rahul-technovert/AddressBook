@@ -17,7 +17,13 @@ function Menubar({ toggleForm, resetSelectedId }: IProp) {
           </button>
         </li>
         <li>
-          <button onClick={toggleForm} className="btn text-white">
+          <button
+            onClick={() => {
+              toggleForm();
+              resetSelectedId();
+            }}
+            className="btn text-white"
+          >
             +Add
           </button>
         </li>

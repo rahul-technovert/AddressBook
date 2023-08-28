@@ -85,3 +85,5 @@ C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook\obj\
 C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook\obj\Debug\net6.0\AddressBook.API.pdb
 C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook\obj\Debug\net6.0\AddressBook.API.genruntimeconfig.cache
 C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook\obj\Debug\net6.0\ref\AddressBook.API.dll
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

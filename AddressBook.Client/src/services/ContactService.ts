@@ -11,20 +11,21 @@ export default class ContactService {
 
   constructor() {
     this.httpService = new HttpService();
-    this.URL = baseURL + ApiEndpoints.ContactsEndpoint;
+    this.URL = `${baseURL}/${ApiEndpoints.ContactsEndpoint}`;
   }
 
-  getCards() {
-    const cardsURL = baseURL + ApiEndpoints.CardsEndpoint;
-    return this.httpService.get<IContactCard[]>(cardsURL);
+  getAll() {
+    return this.httpService.get<IContactCard[]>(
+      `${baseURL}/${ApiEndpoints.CardsEndpoint}`
+    );
   }
 
   get(id: number) {
-    return this.httpService.get<IContact>(this.URL + id);
+    return this.httpService.get<IContact>(`${this.URL}/${id}`);
   }
 
   update(contact: IContact) {
-    return this.httpService.put(this.URL + contact.id, contact);
+    return this.httpService.put(`${this.URL}/${contact.id}`, contact);
   }
 
   create(contact: IContact) {
@@ -32,6 +33,6 @@ export default class ContactService {
   }
 
   delete(id: number) {
-    return this.httpService.delete(this.URL + id);
+    return this.httpService.delete(`${this.URL}/${id}`);
   }
 }

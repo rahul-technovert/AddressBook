@@ -1,5 +1,5 @@
 import Input from "../../common/input/Input";
-import Utitlity from "../../../utils/Utility";
+import Utitlity from "../../../common/utils/Utility";
 import IContactCard from "../../../interfaces/IContactCard";
 import ContactService from "../../../services/ContactService";
 import { FormEvent, useEffect, useState } from "react";
@@ -65,7 +65,7 @@ function ContactForm({
 
   return (
     <div className={`form-container`}>
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <form className="contact-form">
         <h2 className="text-center mb-4 text-info">Add Contact</h2>
         <Input
           label="Name"
@@ -151,7 +151,7 @@ function ContactForm({
           }}
         />
 
-        <button type="submit" className="btn btn-success float-end">
+        <button onClick={handleSubmit} className="btn btn-success float-end">
           Submit
         </button>
         <button

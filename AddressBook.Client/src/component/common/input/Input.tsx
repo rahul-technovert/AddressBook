@@ -1,4 +1,4 @@
-import ErrorMessage from "../../../utils/ErrorMessage";
+import ErrorMessage from "../../../common/utils/ErrorMessage";
 
 interface IProp {
   label: string;

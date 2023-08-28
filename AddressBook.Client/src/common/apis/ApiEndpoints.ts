@@ -1,5 +1,5 @@
 const ApiEndpoints = {
-  ContactsEndpoint: "contacts/",
+  ContactsEndpoint: "contacts",
   CardsEndpoint: "contacts/cards",
 };
 
