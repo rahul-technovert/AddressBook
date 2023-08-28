@@ -1,26 +1,27 @@
-﻿using AddressBook.Contexts;
-using AddressBook.Interfaces;
+﻿using AddressBook.API.Concerns;
+using AddressBook.API.Services;
 using AddressBook.Models;
+using Dapper;
 
 namespace AddressBook.Services
 {
-    public class ContactServices : IContactService
+    public class ContactServices 
     {
-        private AddressBookContext _context;
+        private DbServices _services;
 
-        public ContactServices(AddressBookContext context)
+        public ContactServices(DbServices services)
         {
-            this._context = context;
+            this._services = services;
         }
 
         public Contact GetContact(int id)
         {
-            return this._context.Contacts.Find(id);
+            return this._services.Get<Contact>(Query.GetContactById, id);
         }
 
         public ICollection<ContactCard> GetCards()
         {
-            return this._context.ContactCards.ToList();
+            return this._services.GetAll<ContactCard>(Query.GetAllCards);
         }
 
         public bool DeleteContact(int id)
@@ -30,32 +31,21 @@ namespace AddressBook.Services
             if (contact == null)
                 return false;
 
-            this._context.Contacts.Remove(contact);
-            this._context.SaveChanges();
+            this._services.Delete(Query.DeleteContactById, id);
             return true;
         }
 
-        public void CreateContact(Contact contact)
+        public Contact CreateContact(Contact contact)
         {
-            this._context.Contacts.Add(contact);
-            this._context.SaveChanges();
+            DynamicParameters dynamicParameters = new DynamicParameters(contact);
+            contact.Id = this._services.Post(Query.CreateContact, dynamicParameters);
+            return contact;
         }
 
         public void UpdateContact(Contact contact)
         {
-            Contact dbContact= this.GetContact(contact.Id);
-            this.MapContact(contact, dbContact);
-            this._context.SaveChanges();
-        }
-
-        private void MapContact(Contact updatedContact, Contact dbContact)
-        {
-            dbContact.Email = updatedContact.Email;
-            dbContact.Address = updatedContact.Address;
-            dbContact.Landline = updatedContact.Landline;
-            dbContact.Website = updatedContact.Website;
-            dbContact.Mobile = updatedContact.Mobile;
-            dbContact.Name = updatedContact.Name;
+            DynamicParameters dynamicParameters = new DynamicParameters(contact);
+            this._services.Put(Query.UpdateContact, dynamicParameters);
         }
     }
 }

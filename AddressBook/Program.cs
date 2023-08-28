@@ -1,19 +1,14 @@
-using AddressBook.Contexts;
+using AddressBook.API.Contexts;
+using AddressBook.API.Services;
 using AddressBook.Services;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-builder.Services.AddDbContext<AddressBookContext>(options =>
-           options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
-
 
 builder.Services.AddCors(options =>
 {
@@ -23,6 +18,10 @@ builder.Services.AddCors(options =>
 
 //registering services here
 builder.Services.AddScoped<ContactServices>();
+
+builder.Services.AddSingleton<DapperContext>();
+
+builder.Services.AddScoped<DbServices>();
 
 
 var app = builder.Build();

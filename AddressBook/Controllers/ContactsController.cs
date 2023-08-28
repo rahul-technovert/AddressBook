@@ -1,5 +1,4 @@
-﻿using AddressBook.Contexts;
-using AddressBook.Models;
+﻿using AddressBook.Models;
 using AddressBook.Services;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
@@ -26,6 +25,7 @@ namespace AddressBook.Controllers
         public IActionResult GetContact(int id)
         {
             Contact contact = this._services.GetContact(id);
+
             
             if(contact == null) return NotFound();
 
@@ -38,7 +38,22 @@ namespace AddressBook.Controllers
             this._services.CreateContact(contact);
             return Ok(contact);
         }
-        
+
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteContact(int id)
+        {
+            bool isDeleted = this._services.DeleteContact(id);
+
+            if (!isDeleted) return NotFound();
+
+            return Ok();
+
+        }
+
+
+
+
         [HttpPut("{id}")]
         public IActionResult UpdateContact(int id, [FromBody] Contact contact)
         {
@@ -46,16 +61,9 @@ namespace AddressBook.Controllers
             return Ok(contact);
         }
 
-        [HttpDelete("{id}")]
-        public IActionResult DeleteContact(int id)
-        {
-           bool isDeleted = this._services.DeleteContact(id);
 
-             if(!isDeleted) return NotFound();
 
-             return Ok();
 
-        }
 
     }
 }
