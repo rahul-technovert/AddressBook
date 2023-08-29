@@ -1,4 +1,5 @@
-﻿using AddressBook.Models;
+﻿using AddressBook.Interfaces;
+using AddressBook.Models;
 using AddressBook.Services;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
@@ -9,22 +10,23 @@ namespace AddressBook.Controllers
     [Route("api/contacts")]
     public class ContactsController : Controller
     {
-        private ContactServices _services;
+        private IContactService _contactService;
+
         public ContactsController(ContactServices services)
         {
-            this._services = services;
+            this._contactService = services;
         }
 
         [HttpGet("cards")]
         public IActionResult GetCards()
         {
-            return Ok(this._services.GetCards());
+            return Ok(this._contactService.GetCards());
         }
 
         [HttpGet("{id}")]
         public IActionResult GetContact(int id)
         {
-            Contact contact = this._services.GetContact(id);
+            Contact contact = this._contactService.GetContact(id);
 
             
             if(contact == null) return NotFound();
@@ -35,15 +37,14 @@ namespace AddressBook.Controllers
         [HttpPost]
         public IActionResult CreateContact([FromBody] Contact contact)
         {
-            this._services.CreateContact(contact);
+            this._contactService.CreateContact(contact);
             return Ok(contact);
         }
-
 
         [HttpDelete("{id}")]
         public IActionResult DeleteContact(int id)
         {
-            bool isDeleted = this._services.DeleteContact(id);
+            bool isDeleted = this._contactService.DeleteContact(id);
 
             if (!isDeleted) return NotFound();
 
@@ -51,19 +52,11 @@ namespace AddressBook.Controllers
 
         }
 
-
-
-
         [HttpPut("{id}")]
         public IActionResult UpdateContact(int id, [FromBody] Contact contact)
         {
-            this._services.UpdateContact(contact);
+            this._contactService.UpdateContact(contact);
             return Ok(contact);
         }
-
-
-
-
-
     }
 }

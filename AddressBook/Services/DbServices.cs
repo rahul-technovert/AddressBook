@@ -1,6 +1,4 @@
-﻿using AddressBook.API.Concerns;
-using AddressBook.API.Contexts;
-using AddressBook.Models;
+﻿using AddressBook.API.Contexts;
 using Dapper;
 
 namespace AddressBook.API.Services
@@ -8,24 +6,25 @@ namespace AddressBook.API.Services
     public class DbServices
     {
         private DapperContext _context;
+
         public DbServices(DapperContext context)
         {
             this._context = context;
         }
 
-        public ICollection<T> GetAll<T>(String query) where T : class
+        public ICollection<T> GetAll<T>(String tableOrView) where T : class
         {
             using(var connection = _context.CreateConnection())
             {
-                return connection.Query<T>(query).ToList();
+                return connection.Query<T>($"SELECT * FROM {tableOrView}").ToList();
             }
         }
 
-        public T Get<T>(String query, int id) where T : class
+        public T Get<T>(String tableOrView, int id) where T : class
         {
             using(var connection = _context.CreateConnection())
             {
-                return connection.QuerySingleOrDefault<T>(query, new {id});
+                return connection.QuerySingleOrDefault<T>($"SELECT * FROM {tableOrView} WHERE Id = @Id", new {id});
             }
         }
 

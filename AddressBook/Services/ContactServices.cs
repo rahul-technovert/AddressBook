@@ -1,11 +1,12 @@
 ﻿using AddressBook.API.Concerns;
 using AddressBook.API.Services;
+using AddressBook.Interfaces;
 using AddressBook.Models;
 using Dapper;
 
 namespace AddressBook.Services
 {
-    public class ContactServices 
+    public class ContactServices  : IContactService
     {
         private DbServices _services;
 
@@ -16,12 +17,12 @@ namespace AddressBook.Services
 
         public Contact GetContact(int id)
         {
-            return this._services.Get<Contact>(Query.GetContactById, id);
+            return this._services.Get<Contact>("Contacts", id);
         }
 
         public ICollection<ContactCard> GetCards()
         {
-            return this._services.GetAll<ContactCard>(Query.GetAllCards);
+            return this._services.GetAll<ContactCard>("ContactCardView");
         }
 
         public bool DeleteContact(int id)
@@ -31,7 +32,7 @@ namespace AddressBook.Services
             if (contact == null)
                 return false;
 
-            this._services.Delete(Query.DeleteContactById, id);
+            this._services.Delete(Query.DeleteContact , id);
             return true;
         }
 

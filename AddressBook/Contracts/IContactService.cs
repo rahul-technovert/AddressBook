@@ -5,9 +5,13 @@ namespace AddressBook.Interfaces
     public interface IContactService
     {
         public ICollection<ContactCard> GetCards();
+
         public Contact GetContact(int id);
-        public void CreateContact(Contact contact);
+
+        public Contact CreateContact(Contact contact);
+
         public void UpdateContact(Contact contact);
+
         public bool DeleteContact(int id);
     }
 }
