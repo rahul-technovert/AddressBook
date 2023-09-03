@@ -1,10 +1,11 @@
-﻿using AddressBook.Interfaces;
-using AddressBook.Models;
+﻿using AddressBook.Concerns;
+using AddressBook.Contracts;
 using AddressBook.Services;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AddressBook.Controllers
+
+namespace AddressBook.API.Controllers
 {
     [EnableCors("AllowAnyOrigin")]
     [Route("api/contacts")]

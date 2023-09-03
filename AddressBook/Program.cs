@@ -1,6 +1,5 @@
-using AddressBook.API.Contexts;
-using AddressBook.API.Services;
 using AddressBook.Services;
+using AddressBook.Services.Contexts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,12 +16,15 @@ builder.Services.AddCors(options =>
 });
 
 //registering services here
-builder.Services.AddScoped<ContactServices>();
 
-builder.Services.AddSingleton<DapperContext>();
+string connectionString = builder.Configuration.GetConnectionString("Default");
 
+Console.WriteLine($"Connection string: {connectionString}");
+
+
+builder.Services.AddSingleton<DapperContext>(provider => new DapperContext(connectionString));
 builder.Services.AddScoped<DbServices>();
-
+builder.Services.AddScoped<ContactServices>();
 
 var app = builder.Build();
 

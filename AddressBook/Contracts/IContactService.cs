@@ -1,6 +1,6 @@
-﻿using AddressBook.Models;
+﻿using AddressBook.API.Concerns.Concerns;
 
-namespace AddressBook.Interfaces
+namespace AddressBook.API.Interfaces
 {
     public interface IContactService
     {

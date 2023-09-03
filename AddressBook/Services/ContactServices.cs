@@ -1,10 +1,8 @@
-﻿using AddressBook.API.Concerns;
-using AddressBook.API.Services;
-using AddressBook.Interfaces;
-using AddressBook.Models;
+﻿using AddressBook.API.Concerns.Concerns;
+using AddressBook.Contracts;
 using Dapper;
 
-namespace AddressBook.Services
+namespace AddressBook.API.Services
 {
     public class ContactServices  : IContactService
     {

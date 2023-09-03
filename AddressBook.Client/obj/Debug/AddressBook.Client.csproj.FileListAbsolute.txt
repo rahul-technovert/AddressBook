@@ -1,0 +1,6 @@
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Client\bin\Debug\AddressBook.Client.dll
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Client\bin\Debug\AddressBook.Client.pdb
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Client\obj\Debug\AddressBook.Client.csproj.AssemblyReference.cache
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Client\obj\Debug\AddressBook.Client.csproj.CoreCompileInputs.cache
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Client\obj\Debug\AddressBook.Client.dll
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Client\obj\Debug\AddressBook.Client.pdb

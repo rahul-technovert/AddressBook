@@ -7,6 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddressBook.API", "AddressB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Client", "AddressBook.Client\AddressBook.Client.csproj", "{C3EC980B-53CC-401F-844E-8D53BEC73EDD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddresBook.Concerns", "AddresBook.API.Concerns\AddresBook.Concerns.csproj", "{4B190DA8-BCF8-4B6D-8D44-CF713E317985}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Contracts", "AddressBook.Contracts\AddressBook.Contracts.csproj", "{5327B412-9632-4C2C-BF75-EA3DCC5B4262}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Services", "AddressBook.Services\AddressBook.Services.csproj", "{BFA635D0-C618-48A2-B8BB-ED2EB145B4FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +27,18 @@ Global
 		{C3EC980B-53CC-401F-844E-8D53BEC73EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3EC980B-53CC-401F-844E-8D53BEC73EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3EC980B-53CC-401F-844E-8D53BEC73EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B190DA8-BCF8-4B6D-8D44-CF713E317985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B190DA8-BCF8-4B6D-8D44-CF713E317985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B190DA8-BCF8-4B6D-8D44-CF713E317985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B190DA8-BCF8-4B6D-8D44-CF713E317985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5327B412-9632-4C2C-BF75-EA3DCC5B4262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5327B412-9632-4C2C-BF75-EA3DCC5B4262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5327B412-9632-4C2C-BF75-EA3DCC5B4262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5327B412-9632-4C2C-BF75-EA3DCC5B4262}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFA635D0-C618-48A2-B8BB-ED2EB145B4FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA635D0-C618-48A2-B8BB-ED2EB145B4FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA635D0-C618-48A2-B8BB-ED2EB145B4FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA635D0-C618-48A2-B8BB-ED2EB145B4FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

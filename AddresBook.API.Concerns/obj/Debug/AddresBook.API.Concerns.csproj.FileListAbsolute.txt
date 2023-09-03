@@ -1,0 +1,7 @@
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddresBook.API.Concerns\obj\Debug\AddresBook.API.Concerns.csproj.AssemblyReference.cache
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddresBook.API.Concerns\obj\Debug\AddresBook.API.Concerns.csproj.CoreCompileInputs.cache
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddresBook.API.Concerns\bin\Debug\AddresBook.API.Concerns.dll.config
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddresBook.API.Concerns\bin\Debug\AddresBook.API.Concerns.dll
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddresBook.API.Concerns\bin\Debug\AddresBook.API.Concerns.pdb
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddresBook.API.Concerns\obj\Debug\AddresBook.API.Concerns.dll
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddresBook.API.Concerns\obj\Debug\AddresBook.API.Concerns.pdb

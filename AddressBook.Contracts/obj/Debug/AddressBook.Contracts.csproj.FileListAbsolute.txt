@@ -1,0 +1,11 @@
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Contracts\bin\Debug\AddressBook.Contracts.dll.config
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Contracts\bin\Debug\AddressBook.Contracts.dll
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Contracts\bin\Debug\AddressBook.Contracts.pdb
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Contracts\bin\Debug\AddresBook.API.Concerns.dll
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Contracts\bin\Debug\AddresBook.API.Concerns.pdb
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Contracts\bin\Debug\AddresBook.API.Concerns.dll.config
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Contracts\obj\Debug\AddressBook.Contracts.csproj.AssemblyReference.cache
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Contracts\obj\Debug\AddressBook.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Contracts\obj\Debug\AddressBook.Contracts.csproj.CopyComplete
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Contracts\obj\Debug\AddressBook.Contracts.dll
+C:\Users\rahul.k\OneDrive - Technovert\Desktop\.Net\AddressBook\AddressBook.Contracts\obj\Debug\AddressBook.Contracts.pdb

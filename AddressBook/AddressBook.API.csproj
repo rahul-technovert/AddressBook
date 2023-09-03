@@ -7,22 +7,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Concerns\**" />
     <Compile Remove="Migrations\**" />
+    <Content Remove="Concerns\**" />
     <Content Remove="Migrations\**" />
+    <EmbeddedResource Remove="Concerns\**" />
     <EmbeddedResource Remove="Migrations\**" />
+    <None Remove="Concerns\**" />
     <None Remove="Migrations\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="Services\DbService.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
-    <PackageReference Include="Dapper" Version="2.0.151" />
-    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AddresBook.API.Concerns\AddresBook.Concerns.csproj" />
+    <ProjectReference Include="..\AddressBook.Contracts\AddressBook.Contracts.csproj" />
+    <ProjectReference Include="..\AddressBook.Services\AddressBook.Services.csproj" />
   </ItemGroup>
 
 </Project>

@@ -8,10 +8,11 @@
     ".NETCoreApp,Version=v6.0": {
       "AddressBook.API/1.0.0": {
         "dependencies": {
+          "AddresBook.Concerns": "1.0.0",
+          "AddressBook.Contracts": "1.0.0",
+          "AddressBook.Services": "1.0.0",
           "AutoMapper": "10.1.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
-          "Dapper": "2.0.151",
-          "Microsoft.Data.SqlClient": "5.1.1",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
@@ -496,6 +497,30 @@
             "fileVersion": "6.0.21.52210"
           }
         }
+      },
+      "AddresBook.Concerns/1.0.0": {
+        "runtime": {
+          "AddresBook.API.Concerns.dll": {}
+        }
+      },
+      "AddressBook.Contracts/1.0.0": {
+        "dependencies": {
+          "AddresBook.Concerns": "1.0.0"
+        },
+        "runtime": {
+          "AddressBook.Contracts.dll": {}
+        }
+      },
+      "AddressBook.Services/1.0.0": {
+        "dependencies": {
+          "AddresBook.Concerns": "1.0.0",
+          "AddressBook.Contracts": "1.0.0",
+          "Dapper": "2.0.151",
+          "Microsoft.Data.SqlClient": "5.1.1"
+        },
+        "runtime": {
+          "AddressBook.Services.dll": {}
+        }
       }
     }
   },
@@ -875,6 +900,21 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "AddresBook.Concerns/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AddressBook.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AddressBook.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

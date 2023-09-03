@@ -894,6 +894,43 @@
             "rid": "win"
           }
         }
+      },
+      "AddresBook.Concerns/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/AddresBook.Concerns.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AddresBook.Concerns.dll": {}
+        }
+      },
+      "AddressBook.Contracts/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "AddresBook.Concerns": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AddressBook.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AddressBook.Contracts.dll": {}
+        }
+      },
+      "AddressBook.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AddresBook.Concerns": "1.0.0",
+          "AddressBook.Contracts": "1.0.0",
+          "Dapper": "2.0.151",
+          "Microsoft.Data.SqlClient": "5.1.1"
+        },
+        "compile": {
+          "bin/placeholder/AddressBook.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AddressBook.Services.dll": {}
+        }
       }
     }
   },
@@ -2661,14 +2698,30 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "AddresBook.Concerns/1.0.0": {
+      "type": "project",
+      "path": "../AddresBook.API.Concerns/AddresBook.Concerns.csproj",
+      "msbuildProject": "../AddresBook.API.Concerns/AddresBook.Concerns.csproj"
+    },
+    "AddressBook.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../AddressBook.Contracts/AddressBook.Contracts.csproj",
+      "msbuildProject": "../AddressBook.Contracts/AddressBook.Contracts.csproj"
+    },
+    "AddressBook.Services/1.0.0": {
+      "type": "project",
+      "path": "../AddressBook.Services/AddressBook.Services.csproj",
+      "msbuildProject": "../AddressBook.Services/AddressBook.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AddresBook.Concerns >= 1.0.0",
+      "AddressBook.Contracts >= 1.0.0",
+      "AddressBook.Services >= 1.0.0",
       "AutoMapper >= 10.1.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.1",
-      "Dapper >= 2.0.151",
-      "Microsoft.Data.SqlClient >= 5.1.1",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -2699,7 +2752,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\rahul.k\\OneDrive - Technovert\\Desktop\\.Net\\AddressBook\\AddresBook.API.Concerns\\AddresBook.Concerns.csproj": {
+              "projectPath": "C:\\Users\\rahul.k\\OneDrive - Technovert\\Desktop\\.Net\\AddressBook\\AddresBook.API.Concerns\\AddresBook.Concerns.csproj"
+            },
+            "C:\\Users\\rahul.k\\OneDrive - Technovert\\Desktop\\.Net\\AddressBook\\AddressBook.Contracts\\AddressBook.Contracts.csproj": {
+              "projectPath": "C:\\Users\\rahul.k\\OneDrive - Technovert\\Desktop\\.Net\\AddressBook\\AddressBook.Contracts\\AddressBook.Contracts.csproj"
+            },
+            "C:\\Users\\rahul.k\\OneDrive - Technovert\\Desktop\\.Net\\AddressBook\\AddressBook.Services\\AddressBook.Services.csproj": {
+              "projectPath": "C:\\Users\\rahul.k\\OneDrive - Technovert\\Desktop\\.Net\\AddressBook\\AddressBook.Services\\AddressBook.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2719,14 +2782,6 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[8.1.1, )"
-          },
-          "Dapper": {
-            "target": "Package",
-            "version": "[2.0.151, )"
-          },
-          "Microsoft.Data.SqlClient": {
-            "target": "Package",
-            "version": "[5.1.1, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
